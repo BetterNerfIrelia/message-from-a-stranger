@@ -1,0 +1,46 @@
+{
+  "name": "@betterthings/message-from-a-stranger",
+  "version": "0.0.0",
+  "description": "send messages to slack from a website",
+  "main": "index.js",
+  "author": {
+    "name": "BTD - Better Things Digital GmbH",
+    "email": "hi@betterthings.digital",
+    "url": "https://betterthings.digital"
+  },
+  "contributors": [
+    {
+      "name": "Florian Hämmerle",
+      "email": "florian@betterthings.digital",
+      "url": "https://betterthings.digital"
+    }
+  ],
+  "scripts": {
+    "precommit": "lint-staged",
+    "prepush": "npm test",
+    "start": "node index.js",
+    "test": "SLACK_HOOK=test jest"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.18.0",
+    "debug": "3.1.0",
+    "hapi": "17.3.1",
+    "inert": "5.1.0",
+    "joi": "13.2.0"
+  },
+  "devDependencies": {
+    "husky": "0.14.3",
+    "jest": "22.4.3",
+    "lint-staged": "7.0.4",
+    "moxios": "0.4.0",
+    "nodemon": "1.17.3",
+    "prettier": "1.12.1"
+  }
+}

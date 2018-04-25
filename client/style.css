@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.send-message-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.message-input {
+  display: block;
+  width: 25em;
+  border: none;
+  border-bottom: 1px solid #eee;
+  outline: none;
+  padding: 0.75em;
+  font: inherit;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.mood-list {
+  margin-top: 2em;
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: center;
+}
+
+.mood {
+  font-size: 4.5em;
+  padding-left: 12px;
+  padding-right: 12px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.mood--selected {
+  opacity: 1;
+}
+
+.button {
+  background: #ebecf0;
+  color: #5e6c84;
+  padding: 8px 12px;
+  border: none;
+  font: inherit;
+  font-size: 0.85em;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 130ms ease-in-out;
+}
+
+.button:hover {
+  background: #dfe1e5;
+}

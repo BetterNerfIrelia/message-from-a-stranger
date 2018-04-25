@@ -1,0 +1,5 @@
+{
+  "env": {
+    "SLACK_HOOK": "@slack-hook-messages"
+  }
+}
