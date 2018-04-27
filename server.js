@@ -5,7 +5,7 @@ const joi = require('joi')
 const pkg = require('./package.json')
 
 // the slack incoming webhook url
-const HOOK_URL = process.env.SLACK_HOOK
+const HOOK_URL = "https://hooks.slack.com/services/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"
 
 if (!HOOK_URL) {
   console.log('environment variable SLACK_HOOK is required')
